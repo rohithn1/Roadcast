@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="icons/roadcast-logo.ico" type="image/x-icon" />
+    <title>Roadcast</title>
+    <!-- <link href="Content/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <div class = "loadingcontainer">
+            <!-- <img class = "loader" src = "./icons/loader.gif"></img> -->
+            <div class="loader"></div>
+        </div>
+        <div class="heading-wrapper">
+            <div class="wrapper-left">
+                <div class="horizontalize">
+                    <h1 id="title">Roadcast</h1>
+                    <a id="link" href="https://youtu.be/S77ntwyIbjg" target="_blank">
+                        <img id="logo" src="icons/roadcast-logo.png">
+                    </a>
+                </div>
+                <div class="header">
+                    <form class="form">
+                        <div class="form-group">
+                            <div class="horizontalize-content">
+                                <label for="from" class="img-label"><i class="fas fa-map-marker-alt"></i></label>
+                                <div class="input">
+                                    <input type="text" id="from" placeholder="Origin" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <div class="horizontalize-content">
+                                <label for="to" class="img-label"><i class="fas fa-flag-checkered"></i></label>
+                                <div class="input">
+                                    <input type="text" id="to" placeholder="Destination" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+        
+                    <div id="button-container">
+                        <button class="submit-form"><i class="fas fa-route"></i></button>
+                    </div>
+
+                    <input type="time" id="appt" name="appt" min="00:00" max="24:00" required>
+                </div>
+            </div>
+
+            <div class="wrapper-right">
+
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div id="googleMap">
+
+            </div>
+            <div id="output">
+
+            </div>
+        </div>
+
+        <a id="link" href="https://github.com/rohithn1" target="_blank">
+            <i id="github" class="fab fa-github-square fa-2x"></i>
+        </a>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoU94-kheq5gfhvh3c6kPs9DChNKwSi-g&libraries=places,visualization"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="Scripts/jquery-3.1.1.min.js"></script> -->
+    <script src="javascript.js"></script>
+</body>
+</html>
+
+
+
+
+                <!-- <div id = "left">
+                    <h1 id="forecast-city">City</h1>
+                    <line class="line"><p style="display:inline" id="forecast-description">thunderstorm with heavy drizzle</p> <p style="display:inline">in</p> <p style="display:inline" id="forecast-eta">10 mins</p></line>
+                    <br><br>
+                    <line class="line"><p style="display:inline">feels like </p> <p style="display:inline" d="forecast-feels-like">76 F</p></line>
+                    <br><br>
+                    <line class="line"><p style="display:inline">visibility: </p><p style="display:inline" id="forecast-visibility">40000</p> <p style="display:inline">m</p></line>
+                </div>
+                <div id = "right">
+                    <div>
+                        <p id="forecast-temp">70 F</p>
+                    </div>
+                    <div>
+                        <img id="forecast-icon" src="icons/roadcast-logo.png">
+                    </div>
+                </div> -->

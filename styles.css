@@ -1,0 +1,278 @@
+﻿/*styling.css*/
+/*add font family, background image*/
+
+body {
+    color: #4c6ef5;
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.heading-wrapper {
+    width: 100%; 
+    height: 30%; 
+    overflow: hidden;
+}
+
+.wrapper-left {
+    width: 40%; 
+    float: left;
+}
+
+.wrapper-right {
+    margin: 1% 1% 1% 1%;
+    width: 30%; 
+    height: 180px; 
+    float: right;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #e9f7ff, #9ed7ff);
+
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#right {
+    float: right;
+    width: 30%;
+    height: 180px; 
+}
+
+#left {
+    float: left;
+    width: 65%;
+    height: 180px; 
+    margin-left: 5px;
+}
+
+#forecast-city {
+    padding-left: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+}
+#forecast-temp {
+    padding-right: 5px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    float: right;
+    color: black;
+    font-weight: bold;
+}
+
+.line {
+    padding-left: 10px;
+    font-size: 13px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: black;
+    font-weight: bold;
+}
+
+#forecast-icon {
+    max-width: 45px;
+    height: auto;
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+#logo {
+    max-width: 50px;
+    height: auto;
+    float: right;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+#draggable-car {
+    max-width: 40px;
+    height: auto;
+}
+
+#title {
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+.horizontalize {
+    width: 200px; 
+    height: 80px; 
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.fa-map-marker-alt,
+.fa-route,
+.fa-flag-checkered {
+    color: #4c6ef5;
+}
+
+.fa-map-marker-alt,
+.fa-flag-checkered {
+    padding-top: 10px;
+    padding-left: 7px;
+}
+  
+.header {
+    width: 550px; 
+    height: 100px; 
+    overflow: hidden;
+} 
+  
+  /*map*/
+#googleMap {
+    margin-top: 25px;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 0px;
+}
+
+#map-container {
+    height: 60%;
+}
+  
+  /*output box*/
+#output {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px auto;
+}
+  
+#mode {
+    color: black;
+}
+
+.img-label {
+    float: left;
+}
+
+.input {
+    float: right;
+}
+
+.horizontalize-content {
+    width: 380px; 
+    height: 100; 
+    overflow: hidden;
+}
+
+.form {
+    float: left
+}
+
+.form-control {
+    width: 350px;
+    padding: 9px;
+    box-sizing: border-box;
+    border: 2px solid #becbfd;
+    border-radius: 5px;
+}
+
+.submit-form {
+    background-color: #becbfd;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.submit-form:hover {
+    color: #becbfd;
+    cursor: pointer;
+    border: 1px solid #4c6ef5;
+  }
+
+#button-container {
+    float: right;
+    margin-right: 50px;
+}
+
+#appt {
+    margin-top: 20px;
+    float: right;
+    margin-right: 23px;
+    border-radius: 5px;
+    border: 2px solid #becbfd;
+    font-family: "Roboto";
+    color: #4c6ef5;
+    height: 34px;
+}
+
+#car-container {
+    width: 100%;
+    height: 30px;
+    /* border: 2px solid rgb(170, 168, 168); */
+    margin: 5px 0 0 0;
+    overflow: hidden;
+}
+
+#weather-timeline {
+    width: 99%;
+    margin: auto;
+    border: 2px solid rgb(170, 168, 168);
+}
+
+#weather-pins {
+    width: 99.5%;
+    margin: auto;
+    margin-bottom: 5px;
+    height: 50px;
+    background-color: #f8f9ff;
+    border-radius: 5px;
+}
+
+#github {
+    padding-left: 49%;
+    max-width: 100px;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+#github:hover {
+    cursor: pointer;
+}
+
+a:visited { color:black; }
+
+.main {
+    margin-bottom: 100px;
+}
+
+.loadingcontainer {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute;
+    z-index: 2;
+    cursor: not-allowed;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3453db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+
+    
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
