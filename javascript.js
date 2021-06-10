@@ -10,8 +10,8 @@ let markers = []
 let cors = 'https://limitless-castle-15768.herokuapp.com/'
 let to = "DEFAULT_END"
 let from = "DEFAULT_START"
-let googleKey = atob('QUl6YVN5RG9VOTQta2hlcTVnZmh2aDNjNmtQczlEQ2hOS3dTaS1n')
-let weatherKey = atob('N2U3OTYzNzE3ODdjYzU0YzRmOTJmM2IyNmRjMDg1Y2M=')
+let googleKey = "YOUR GOOGLE API KEY"
+let weatherKey = "YOUR OPENWEATHER API KEY"
 document.getElementsByClassName('loadingcontainer')[0].style.display = 'none'
 
 const icons = {
